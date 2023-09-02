@@ -1,0 +1,74 @@
+<head>
+  <title>About Us</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="main-header">
+    <nav class="nav main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+		<li><a href="merchandise.html">Merchandise</a></li>
+		<li><a href="booking.html">Booking Enquiries</a></li>
+      </ul>
+     </nav>
+	 
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+    <!-- Identify your business so that you can collect the payments. -->
+    <input type="hidden" name="business" value="test@band.com">
+
+    <!-- Specify a PayPal shopping cart View Cart button. -->
+    <input type="hidden" name="cmd" value="_cart">
+    <input type="hidden" name="display" value="1">
+
+    <!-- Display the View Cart button. -->
+    <input type="image" name="submit"
+        src="https://www.paypalobjects.com/en_US/i/btn/btn_viewcart_LG.gif"
+       alt="Add to Cart">
+    <img alt="" width="1" height="1"
+        src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+</form>	
+   <h1 class="title">About Us</h1>
+   
+ 
+    <!-- Creating footer nav bar. -->
+<footer class="main-footer">
+  <div class="container main-footer-container nav main-nav">
+    <ul>
+        <li><a onclick="myFunction()">About us</a></li>
+        <li><a onclick="myPopFunctionDelivery()">Delivery</a></li>
+        <li><a onclick="myFunctionLegal()">Legal</a></li>
+		<li><a onclick="myFunctionReturn()">Return</a></li>
+      </ul>
+  </div>
+  </body>
+</footer>
+<script>
+<!-- functions used to make footer interactive. -->
+function myFunction() {
+  var myWindow = window.open("", "About us", "width=200,height=100");
+  myWindow.document.write("<p>This is the about us page.</p>");
+}
+
+function myPopFunctionDelivery() {
+  alert("This is the Delivery page")
+ }
+ 
+ function myFunctionLegal() {
+  var myWindow = window.open("", "About us", "width=200,height=100");
+  myWindow.document.write("<p>This is the about us page.</p>");
+}
+
+function myFunctionReturn() {
+  alert("This is the Delivery page")
+ }
+ 
+
+
+
+</script>
+
+
+</body>
+</html>

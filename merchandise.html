@@ -1,0 +1,182 @@
+<head>
+  <title>Merchandise</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<style>
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: white;
+  color: #000000;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+</style>
+
+<header class="main-header">
+    <nav class="nav main-nav">
+              <li><a href="index.html"><div class="tooltip">Home
+  <span class="tooltiptext">Home</span></a></li>
+  
+  
+		  <li><a href="gallery.html"><div class="tooltip">Gallery
+  <span class="tooltiptext">Gallery</span></a></li>
+		  
+		  
+		<li><a href="merchandise.html"><div class="tooltip">Merchandise
+  <span class="tooltiptext">Merchandise</span></a></li>
+		
+		
+		<li><a href="booking.html"><div class="tooltip">Booking Enquiries
+  <span class="tooltiptext">Booking</span></a></li>
+      </ul>
+     </nav>
+	 <h1 class="title">Merchandise</h1>
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+    <!-- Identify your business so that you can collect the payments. -->
+    <input type="hidden" name="business" value="test@band.com">
+
+    <!-- Specify a PayPal shopping cart View Cart button. -->
+    <input type="hidden" name="cmd" value="_cart">
+    <input type="hidden" name="display" value="1">
+
+    <!-- Display the View Cart button. -->
+    <input type="image" name="submit"
+        src="https://www.paypalobjects.com/en_US/i/btn/btn_viewcart_LG.gif"
+       alt="Add to Cart">
+    <img alt="" width="1" height="1"
+        src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+</form>	
+</header>
+<section>
+	<h3> Official merchandise of The Sharmanaires</h3>
+
+<div class="grid-container">
+  <div>
+       Buy The Sharmanaires CD<p><img src=Images\cd.jpg width=200 height=200 align=center></p>
+ <form target="paypal" action=https://www.paypal.com/cgi-bin/webscrmethod="post">
+  <!-- Identify your band so that you can collect the payments. -->
+  <input type="hidden" name="business" value="test@band.com">
+
+  <!-- Specify a PayPal Shopping Cart Add to Cart button. -->
+  <input type="hidden" name="cmd" value="_cart">
+  <input type="hidden" name="add" value="1">
+
+  <!-- Specify details about the item that buyers will purchase. -->
+  <input type="hidden" name="item_name"   value=" Music CDs">
+  <input type="hidden" name="amount" value="4.99">
+  <input type="hidden" name="currency_code" value="GBP">
+
+   <!-- Display the payment button. -->
+  <input type="image" name="submit"
+    src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+    alt="Add to Cart">
+  <img alt="" width="1" height="1"
+    src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+</form>
+  </div>
+  <div>
+       
+
+       Buy The Sharmanaires T-Shirt <p> <img src=Images\tshirt.jfif width=200 height=200> 
+  <form target="paypal" action=https://www.paypal.com/cgi-bin/webscrmethod="post">
+  <!-- Identify your business so that you can collect the payments. -->
+  <input type="hidden" name="business" value="test@band.com">
+
+  <!-- Specify a PayPal Shopping Cart Add to Cart button. -->
+  <input type="hidden" name="cmd" value="_cart">
+  <input type="hidden" name="add" value="1">
+
+  <!-- Specify details about the item that buyers will purchase. -->
+  <input type="hidden" name="item_name"   value=" Band t-shirt">
+  <input type="hidden" name="amount" value="8.00">
+  <input type="hidden" name="currency_code" value="GBP">
+
+   <!-- Display the payment button. -->
+  <input type="image" name="submit"
+    src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+    alt="Add to Cart">
+  <img alt="" width="1" height="1"
+    src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+</form>
+  </div>
+  <div>
+       
+
+       Buy The Sharmanaires tickets <p> <img src=Images\ticket.jfif width=200 height=200>  
+<form target="paypal" action=https://www.paypal.com/cgi-bin/webscrmethod="post">
+  <!-- Identify your business so that you can collect the payments. -->
+  <input type="hidden" name="business" value="test@band.com">
+
+  <!-- Specify a PayPal Shopping Cart Add to Cart button. -->
+  <input type="hidden" name="cmd" value="_cart">
+  <input type="hidden" name="add" value="1">
+
+  <!-- Specify details about the item that buyers will purchase. -->
+  <input type="hidden" name="item_name"   value=" Tickets">
+  <input type="hidden" name="amount" value="3.50">
+  <input type="hidden" name="currency_code" value="GBP">
+
+   <!-- Display the payment button. -->
+  <input type="image" name="submit"
+    src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+    alt="Add to Cart">
+  <img alt="" width="1" height="1"
+    src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+</form>
+  </div> 
+</div>
+    <!-- Creating footer nav bar. -->
+<footer class="main-footer">
+  <div class="container main-footer-container nav main-nav">
+    <ul>
+        <li><a onclick="myPopFunctionDelivery()">Delivery</a></li>
+        <li><a onclick="myFunctionLegal()">Legal</a></li>
+		<li><a onclick="myFunctionReturn()">Return</a></li>
+      </ul>
+  </div>
+  </body>
+</footer>
+<script>
+
+<!-- functions used to make footer interactive. -->
+<!-- function creates a new window for about us. -->
+function myFunction() {
+  var myWindow = window.open("", "About us", "width=200,height=100");
+  myWindow.document.write("<p>This is the about us page.</p>");
+}
+<!-- function creates pop up for delivery. -->
+function myPopFunctionDelivery() {
+  alert("Standard Delivery Time is 3-5 Working Days. Delivery is free on certain eligible products, when specified in the listing. For orders up to 10kg delivery is £3.49. For all orders over 10kg we charge an additional £3.49 (and for each additional 10kg).")
+ }
+ <!-- function creates a new window for Legal. -->
+ function myFunctionLegal() {
+  var myWindow = window.open("", "Legal", "width=200,height=100");
+  myWindow.document.write("<p>Manufacturers, and sometimes others involved in a product’s supply chain, are liable for their products under the Consumer Protection Act 1987. This means that if the product is unsafe and causes personal injury or death to any person, or damage to private property, you could be sued for compensation. </p>");
+}
+<!-- function creates pop up for return. -->
+function myFunctionReturn() {
+  alert("You have 60 days from delivery to return an item for exchange or a full refund, excluding sale items. You will need to provide a valid parcel summary document to enable us to process your return. For sale items purchased from our website, we will be happy to either refund or exchange them if you change your mind within 14 days of receipt. Our “goodwill” refund policy does not affect your statutory rights under the Regulations or other consumer legislation.")
+ }
+ 
+</script>
+
+</body>
+</html>
+

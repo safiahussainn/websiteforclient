@@ -1,0 +1,158 @@
+<!doctype html>
+<head>
+ <!-- Creating title for gallery page. -->
+  <title>Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <!-- Creating tooltip for nav bar. -->
+<style>
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: white;
+  color: #000000;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+</style>
+ <!-- Creating nav bar. -->
+<header class="main-header">
+    <nav class="nav main-nav">
+              <li><a href="index.html"><div class="tooltip">Home
+  <span class="tooltiptext">Home</span></a></li>
+  
+  
+		  <li><a href="gallery.html"><div class="tooltip">Gallery
+  <span class="tooltiptext">Gallery</span></a></li>
+		  
+		  
+		<li><a href="merchandise.html"><div class="tooltip">Merchandise
+  <span class="tooltiptext">Merchandise</span></a></li>
+		
+		
+		<li><a href="booking.html"><div class="tooltip">Booking Enquiries
+  <span class="tooltiptext">Booking</span></a></li>
+      </ul>
+     </nav>
+	 <h1 class="title">Gallery</h1>
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+    <!-- Identify your business so that you can collect the payments. -->
+    <input type="hidden" name="business" value="test@band.com">
+
+    <!-- Specify a PayPal shopping cart View Cart button. -->
+    <input type="hidden" name="cmd" value="_cart">
+    <input type="hidden" name="display" value="1">
+
+    <!-- Display the View Cart button. -->
+    <input type="image" name="submit"
+        src="https://www.paypalobjects.com/en_US/i/btn/btn_viewcart_LG.gif"
+       alt="Add to Cart">
+    <img alt="" width="1" height="1"
+        src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+</form>	
+</header>
+
+ <!-- Creating gallery. -->
+<section>
+	<h3>    Previous performances of The Sharmanaires</h3>
+
+<div class="grid-container">
+  <div>
+        Band Image <p><img src=Images\band0.jpg alt= "Image of concert" width="250" height="250" align=center></p>
+  </div>
+  <div>
+       
+
+        Band Image <p> <img src=Images\band1.jpg alt= "Image of concert" width="250" height="250"> 
+  </div>
+  <div>
+       
+
+        Band Image <p> <img src=Images\band2.jpg alt= "Image of concert" width="250" height="250"> 
+  </div>
+  <div>
+  
+        Band Image <p><img src=Images\band3.jpg alt= "Image of concert" width="250" height="250" align=center></p>
+  </div>
+  <div>
+       
+
+        Band Image <p> <img src=Images\band4.jpg alt= "Image of concert" width="250" height="250"> 
+  </div>
+  <div>
+       
+
+        Band Image <p> <img src=Images\band5.jpg alt= "Image of concert" width="250" height="250"> 
+  </div>
+<div>
+       
+
+        Band Video <p> <video src=Videos\TheSharmanairesBigBand1.mp4 alt= "Image of concert" width="300" height="300" controls> 
+  </div>
+  <div>
+       
+
+        Band Video <p> <video src=Videos\TheSharmanairesBigBand2.mp4 alt= "Image of concert" width="300" height="300" controls>  
+  </div>
+  <div>
+       
+
+        Band Video <p> <video src=Videos\TheSharmanairesBigBand3.mp4 alt= "Image of concert" width="600" height="300" controls>  
+  </div>
+  </div>
+      
+
+    <!-- Creating footer nav bar. -->
+<footer class="main-footer">
+  <div class="container main-footer-container nav main-nav">
+    <ul>
+        <li><a onclick="myPopFunctionDelivery()">Delivery</a></li>
+        <li><a onclick="myFunctionLegal()">Legal</a></li>
+		<li><a onclick="myFunctionReturn()">Return</a></li>
+      </ul>
+  </div>
+  </body>
+</footer>
+<script>
+
+<!-- functions used to make footer interactive. -->
+<!-- function creates a new window for about us. -->
+function myFunction() {
+  var myWindow = window.open("", "About us", "width=200,height=100");
+  myWindow.document.write("<p>This is the about us page.</p>");
+}
+<!-- function creates pop up for delivery. -->
+function myPopFunctionDelivery() {
+  alert("Standard Delivery Time is 3-5 Working Days. Delivery is free on certain eligible products, when specified in the listing. For orders up to 10kg delivery is £3.49. For all orders over 10kg we charge an additional £3.49 (and for each additional 10kg).")
+ }
+ <!-- function creates a new window for Legal. -->
+ function myFunctionLegal() {
+  var myWindow = window.open("", "Legal", "width=200,height=100");
+  myWindow.document.write("<p>Manufacturers, and sometimes others involved in a product’s supply chain, are liable for their products under the Consumer Protection Act 1987. This means that if the product is unsafe and causes personal injury or death to any person, or damage to private property, you could be sued for compensation. </p>");
+}
+<!-- function creates pop up for return. -->
+function myFunctionReturn() {
+  alert("You have 60 days from delivery to return an item for exchange or a full refund, excluding sale items. You will need to provide a valid parcel summary document to enable us to process your return. For sale items purchased from our website, we will be happy to either refund or exchange them if you change your mind within 14 days of receipt. Our “goodwill” refund policy does not affect your statutory rights under the Regulations or other consumer legislation.")
+ }
+ 
+</script>
+
+</body>
+</html>
+

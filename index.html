@@ -1,0 +1,145 @@
+<!doctype html>
+<head>
+ <!-- Creating title for home page. -->
+  <title>The Sharmanaires</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <!-- Creating tooltip for nav bar. -->
+<style>
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: white;
+  color: #000000;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+</style>
+ <!-- Creating nav bar. -->
+<header class="main-header">
+    <nav class="nav main-nav">
+      <ul>
+        <li><a href="index.html"><div class="tooltip">Home
+  <span class="tooltiptext">Home</span></a></li>
+  
+  
+		  <li><a href="gallery.html"><div class="tooltip">Gallery
+  <span class="tooltiptext">Gallery</span></a></li>
+		  
+		  
+		<li><a href="merchandise.html"><div class="tooltip">Merchandise
+  <span class="tooltiptext">Merchandise</span></a></li>
+		
+		
+		<li><a href="booking.html"><div class="tooltip">Booking Enquiries
+  <span class="tooltiptext">Booking</span></a></li>
+      </ul>
+     </nav>
+   <h1 class="title">The Sharmanaires</h1>
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+    <!-- Identify your business so that you can collect the payments. -->
+    <input type="hidden" name="business" value="test@band.com">
+
+    <!-- Specify a PayPal shopping cart View Cart button. -->
+    <input type="hidden" name="cmd" value="_cart">
+    <input type="hidden" name="display" value="1">
+
+    <!-- Display the View Cart button. -->
+    <input type="image" name="submit"
+        src="https://www.paypalobjects.com/en_US/i/btn/btn_viewcart_LG.gif"
+       alt="Add to Cart">
+    <img alt="" width="1" height="1"
+        src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+</form>	
+
+</header>
+<section >
+	<h2> Introduction</h2>
+    <div>
+      <div>
+        This is the offical website of The Sharmanaires.
+        </div>
+      <hr>
+      <div>
+        <strong>Origin:</strong>
+           
+
+The Sharmanaires Big Band is local band from Birmingham.  They formed in the 1970s as a tribute band to the great artists of the swing era such as Glen Miller, Benny Goodman, Ted Heath, Count Basie and many more.
+      
+	  </div>
+      <hr>
+      <div>
+        <strong>Based:</strong>
+		The Sharmanaires make regular appearances for the Solihull Royal British Legion every Thursday at Broomfield Hall. They are also available for Dinner Dances, Concerts, Weddings 
+
+		 </div>
+	 </div>
+    <img class="about-image" src=Images\saxophone-man.png>
+	  <strong>Forthcoming Appearances:</strong> 
+
+18 May 2023
+feat. Garry Rutter	Knowle Royal British Legion
+1611 Warwick Rd, Knowle, Solihull B93 9LE
+8:15pm - 10:45pm, Admission £5.00 on the door
+Tel. 01564 773253 for more info
+
+<P>
+15 June 2023	Knowle Royal British Legion
+1611 Warwick Rd, Knowle, Solihull B93 9LE
+8:15pm - 10:45pm, Admission £5.00 on the door
+Tel. 01564 773253 for more info
+</p>
+  </section>
+      <!-- Creating footer nav bar. -->
+<footer class="main-footer">
+  <div class="container main-footer-container nav main-nav">
+    <ul>
+        <li><a onclick="myPopFunctionDelivery()">Delivery</a></li>
+        <li><a onclick="myFunctionLegal()">Legal</a></li>
+		<li><a onclick="myFunctionReturn()">Return</a></li>
+      </ul>
+  </div>
+  </body>
+</footer>
+<script>
+
+<!-- functions used to make footer interactive. -->
+<!-- function creates a new window for about us. -->
+function myFunction() {
+  var myWindow = window.open("", "About us", "width=200,height=100");
+  myWindow.document.write("<p>This is the about us page.</p>");
+}
+<!-- function creates pop up for delivery. -->
+function myPopFunctionDelivery() {
+  alert("Standard Delivery Time is 3-5 Working Days. Delivery is free on certain eligible products, when specified in the listing. For orders up to 10kg delivery is £3.49. For all orders over 10kg we charge an additional £3.49 (and for each additional 10kg).")
+ }
+ <!-- function creates a new window for Legal. -->
+ function myFunctionLegal() {
+  var myWindow = window.open("", "Legal", "width=200,height=100");
+  myWindow.document.write("<p>Manufacturers, and sometimes others involved in a product’s supply chain, are liable for their products under the Consumer Protection Act 1987. This means that if the product is unsafe and causes personal injury or death to any person, or damage to private property, you could be sued for compensation. </p>");
+}
+<!-- function creates pop up for return. -->
+function myFunctionReturn() {
+  alert("You have 60 days from delivery to return an item for exchange or a full refund, excluding sale items. You will need to provide a valid parcel summary document to enable us to process your return. For sale items purchased from our website, we will be happy to either refund or exchange them if you change your mind within 14 days of receipt. Our “goodwill” refund policy does not affect your statutory rights under the Regulations or other consumer legislation.")
+ }
+ 
+</script>
+
+</body>
+</html>
